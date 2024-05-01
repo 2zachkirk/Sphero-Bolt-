@@ -6,18 +6,18 @@
 // Program URL: https://edu.sphero.com/program/16788339/edit
 
 async function startProgram() {
-	// Programmer: Zach- Start Text & audio Checkpoint Commit - Date: 
+	// Programmer: Zach Kirk- Start Text & audio Checkpoint Commit - Date: 4/30
 	await speak("start",true)
 	await scrollMatrixText('start!', { r: 66, g: 56, b: 255 }, 30, true)
 	
-	// Programmer:        - Blue LED Checkpoint Commit - Date: 
- setMainLed({ r: 0, g:0, b: 255 });
+	// Programmer:  Marcus Campos Jones      - Blue LED Checkpoint Commit - Date: 5/1
+    setMainLed({ r: 0, g:0, b: 255 });
 	await roll((getHeading() + 0), 60, 3);	
 	await delay(1);
 
 
-    // Programmer:        - Sound One Checkpoint Commit - Date: 
- setMainLed({ r: 0, g:255, b: 0 });
+    // Programmer: Zach Kirk      - Sound One Checkpoint Commit - Date: 5/1
+    setMainLed({ r: 0, g:255, b: 0 });
 	await roll((getHeading() + 90), 60, 2);
 	await speak("Among Us",true)
 
