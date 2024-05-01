@@ -11,11 +11,15 @@ async function startProgram() {
 	await scrollMatrixText('start!', { r: 66, g: 56, b: 255 }, 30, true)
 	
 	// Programmer:        - Blue LED Checkpoint Commit - Date: 
-
+ setMainLed({ r: 0, g:0, b: 255 });
+	await roll((getHeading() + 0), 60, 3);	
+	await delay(1);
 
 
     // Programmer:        - Sound One Checkpoint Commit - Date: 
-
+ setMainLed({ r: 0, g:255, b: 0 });
+	await roll((getHeading() + 90), 60, 2);
+	await speak("Among Us",true)
 
  
     // Programmer:        - Red LED Checkpoint Commit - Date: 
