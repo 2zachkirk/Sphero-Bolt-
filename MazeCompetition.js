@@ -29,10 +29,15 @@ async function startProgram() {
 	await roll((getHeading() + 45), 40, 2);
 
 
-    // Programmer:        - Sound Two Checkpoint Commit - Date: 
-
-
-  
+    // Programmer:  Zach Kirk      - Sound Two Checkpoint Commit - Date: 5/1 
+    
+	await roll((getHeading() - 60), 30, 1);
+    await delay(2);
+    await roll((getHeading() - 30), 30, 2);
+    await delay(2);
+	await roll((getHeading() + 90), 30, 2);
+    await delay(2);
+	await Sound.Game.DigitalDelay.play(true);
     // Programmer:        - Green LED Checkpoint Commit - Date: 
 
 
