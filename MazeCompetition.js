@@ -22,8 +22,11 @@ async function startProgram() {
 	await speak("Among Us",true)
 
  
-    // Programmer:        - Red LED Checkpoint Commit - Date: 
-
+    // Programmer:  Marcus Campos Jones      - Red LED Checkpoint Commit - Date: 5/1
+    setMainLed({ r: 255, g:0, b: 0 });
+	await roll((getHeading() + 90), 50, 2);
+	await delay(2);
+	await roll((getHeading() + 45), 40, 2);
 
 
     // Programmer:        - Sound Two Checkpoint Commit - Date: 
