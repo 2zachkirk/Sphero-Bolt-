@@ -27,16 +27,18 @@ async function startProgram() {
 	await roll((getHeading() + 45), 40, 2);
 	setMainLed({ r: 255, g:0, b: 0 });
 	await delay(2);
-    // Programmer:        - Sound Two Checkpoint Commit - Date: 
-    
-	await roll((getHeading() - 40), 40, 1);
+    // Programmer: Marcus Campos Jones       - Sound Two Checkpoint Commit - Date: 5/6
+    await roll((getHeading() - 40), 40, 1);
+	await roll((getHeading() - 90), 40, 1);
     await delay(2);
     await roll((getHeading() - 120), 40, 2);
     await delay(2);
-	await roll((getHeading() + 30), 40, 2);
+	await roll((getHeading() + 270), 40, 2);
     await delay(2);
 	await Sound.Game.DigitalDelay.play(true);
-	
+	await delay(2);
+	await roll((getHeading() + 30), 40, 2);
+	await delay(2);
     // Programmer:        - Green LED Checkpoint Commit - Date: 
 
 
