@@ -45,8 +45,9 @@ async function startProgram() {
 	setMainLed({ r: 1, g:253, b: 1 });
 	
     // Programmer:        - Purple LED & Sound Three Checkpoint Commit - Date: 
-
-
+    await roll((getHeading() + 270), 40, 1);
+    await delay(2);
+    await roll((getHeading() + 60), 40, 1);
 
     // Programmer:        - Finish Text & Audio Checkpoint Commit - Date: 
 
